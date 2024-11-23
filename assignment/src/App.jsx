@@ -66,7 +66,6 @@ const App = () => {
   return (
     <div className="min-h-screen bg-[#FAFAFA]">
       <div className="max-w-7xl mx-auto px-4 py-8">
-        {/* Hero Section */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4 text-gray-900">
             Find Your Perfect <span className="text-[#7F3DFF]">Rental Home</span>
@@ -75,8 +74,6 @@ const App = () => {
             Beautifully curated rental homes that perfectly match your style and needs, making your
             search for the ideal living space effortless and enjoyable.
           </p>
-          
-          {/* Search Bar */}
           <div className="mt-8 flex justify-center">
             <div className="relative w-full max-w-xl">
               <input
@@ -88,15 +85,12 @@ const App = () => {
             </div>
           </div>
           
-          {/* City Pills */}
           <div className="flex flex-wrap justify-center gap-2 mt-6">
             {cities.map((city, index) => (
               <CityButton key={city} city={city} active={index === 0} />
             ))}
           </div>
         </div>
-
-        {/* Property Listings */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           <PropertyCard
             title="Flat In North Goa"
@@ -123,8 +117,6 @@ const App = () => {
             reviews="31"
           />
         </div>
-
-        {/* Benefits Section */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 text-gray-900">
             Discover The <span className="text-[#7F3DFF]">Benefits</span> Of Renting With Us
@@ -139,8 +131,6 @@ const App = () => {
             <BenefitCard title="Discover Activities Around You" />
           </div>
         </div>
-
-        {/* Localities Section */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold mb-4 text-gray-900">
             Leading <span className="text-[#7F3DFF]">Localities</span> To Explore
@@ -176,7 +166,6 @@ const App = () => {
             </div>
             
             <div className="bg-white rounded-xl overflow-hidden h-full min-h-[400px]">
-              {/* Map placeholder - you'll need to implement actual map integration */}
               <img src="https://s3-alpha-sig.figma.com/img/465a/671b/7ba07d2c8b89c3bdbd6df9d94c4ff61c?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p1tcD338dgaf7nuZIKa0i3zZf8SWRNZgcPVEbJwAbvxJ68haRu8GJRLQSNoVF-4vY6lo-0mQfUo-VdL36wDCGbNtl1CEDcffNZHsLY~XtnzzU--6gpH5I45krcGwhlvJ8K520G06QBYq4xu9pq~ugMNY-NPixiw2UnNmgJIUx6klH5-dN2NH6LT36D3ONU0D0AZdiWQBEMRZgvYSFa6phSK1MNlXkUSM~Zjhy5yCQDZyLlzHgYxun6og886pqrMDr2GQQfN1zCTYn6~f6lCDNN5JgPCqyqzPnLE5FSaAKX~p3pD12W73iEwpVh4Q5jZVLdCwXwz5fHqK0TrDqISnTA__" alt="Map" className="w-full h-full object-cover" />
             </div>
           </div>
